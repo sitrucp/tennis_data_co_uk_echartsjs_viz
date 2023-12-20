@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+}
+
+#sidebar {
+    flex: 1; /* Adjust this value to change the relative width of the sidebar */
+    /* Add any additional styling for the sidebar here */
+}
+
+#visualization {
+    flex: 2; /* Adjust this value to change the relative width of the visualization */
+    height: 600px; /* You can adjust the height as needed */
+    width: 100%;
+    /* Add any additional styling for the visualization here */
+}
+

@@ -1,16 +1,80 @@
-.container {
+/* Main container for the layout */
+.main-container {
     display: flex;
 }
 
+/* Sidebar styling */
 #sidebar {
-    flex: 1; /* Adjust this value to change the relative width of the sidebar */
-    /* Add any additional styling for the sidebar here */
+    width: 200px; /* Fixed width for the sidebar */
+    height: 100vh; /* Full height of the viewport */
+    font-size: 0.9em; /* Reduced font size for all table text */
 }
 
+/* Container for the chart and table */
+.content {
+    flex-grow: 1; /* Takes the remaining space */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+/* Chart (visualization) styling */
 #visualization {
-    flex: 2; /* Adjust this value to change the relative width of the visualization */
-    height: 600px; /* You can adjust the height as needed */
-    width: 100%;
-    /* Add any additional styling for the visualization here */
+    height: 600px; /* Adjust height as needed */
+    width: 100%; /* Full width of its container */
+    /* Add any additional styling for the visualization */
 }
 
+#data-table {
+    width: 90%; /* Table width is 90% of its container */
+    margin: 0 auto; /* Center the table in its container */
+    border-collapse: collapse; /* Removes gaps between borders */
+    text-align: center; /* Center text horizontally in each cell */
+    font-size: 0.9em; /* Reduced font size for all table text */
+}
+
+#data-table th, #data-table td {
+    border: 1px solid #ddd; /* Light grey border for cells */
+    padding: 8px; /* Padding inside each cell */
+}
+
+#data-table th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+    color: black; /* Text color for headers */
+    font-weight: bold; /* Bold text for header */
+}
+
+#data-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+#data-table tr:hover {
+    background-color: #ddd; /* Highlight on hover */
+}
+
+#table-container {
+    margin-top: 50px; /* Adjust this value for desired space */
+    /* Other styling properties, if any */
+}
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack sidebar and content vertically */
+    }
+
+    #sidebar {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height */
+    }
+
+    #table-container {
+        width: 100%; /* Full width */
+    }
+
+    .content {
+        width: 100%; /* Full width */
+    }
+
+    #visualization {
+        height: auto; /* Adjust height for mobile */
+    }
+}

@@ -2,32 +2,77 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCH7J6RW3H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HCH7J6RW3H');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>tennis24_rank_diff_bar_js</title>
+    <title>Tennis Match Rank Difference vs Betting Odds</title>
     <link rel="stylesheet" type="text/css" href="tennis_data_co_uk_apachejs.css">
 </head>
 
 <body>
 
-    <h1>Tennis Match Results and Betting Odds</h1>
+    <h1>Tennis Matches by Rank Difference, Outcome & B365 Betting Odds</h1>
     <p>Data from <a href="http://www.tennis-data.co.uk/" target="_blank">tennis-data.co.uk</a></p>
 
-    <div class="container">
+    <div class="main-container">
         <div id="sidebar">
             <p>Year & Gender</p>
             <ul id="fileList"></ul>
             <p>Tournament</p>
             <ul id="tournamentList"></ul>
         </div>
-        <div id="visualization"></div>
+
+        <div class="content">
+            <div id="visualization">
+                <!-- ECharts visualization will go here -->
+            </div>
+
+            <div id="table-container">
+                <table id="data-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Rank Diff</th>
+                            <th>Bet365 Odds</th>
+                            <th>Winner Name</th>
+                            <th>Winner Rank</th>
+                            <th>Loser Name</th>
+                            <th>Loser Rank</th>
+							<th>Match Date</th>
+                            <th>Round</th>
+                            <th>Sets</th>
+                            <th>Odds Winner</th>
+                            <th>Odds Loser</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.0.2/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
     <script src="tennis_data_co_uk_apachejs.js"></script>
-    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCH7J6RW3H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HCH7J6RW3H');
+    </script>
 </body>
 
 </html>

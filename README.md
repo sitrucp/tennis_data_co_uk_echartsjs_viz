@@ -9,9 +9,9 @@ In the sample visualization screenshot below the rank bars are sorted by rank di
 ![Sample visualization - 2023 Men's US Open Table](2023-Mens-US-Open-table.png)
 
 
-View the interactive visualizations: <a href="https://curtispokrant.com/public_data/tennis_data?year=2023+Men%27s&tournament=US+Open" target="_blank">https://curtispokrant.com/public_data/tennis_data?year=2023+Men%27s&tournament=US+Open</a>.
+<a href="https://curtispokrant.com/public_data/tennis_data?year=2023+Men%27s&tournament=US+Open" target="_blank">View the interactive visualizations</a>.
 
-Read a related blog post about the legend customization: <a href="https://curtispokrant.com/?p=2106" target="_blank">https://curtispokrant.com/?p=2106</a>
+<a href="https://curtispokrant.com/?p=2106" target="_blank">Read a related blog post about the legend customization</a>
 
 ## Acknowledgments
 

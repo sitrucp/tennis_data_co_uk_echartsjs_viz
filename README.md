@@ -11,7 +11,7 @@ In the sample visualization screenshot below the rank bars are sorted by rank di
 
 View the interactive visualizations: <a href="https://curtispokrant.com/public_data/tennis_data?year=2023+Men%27s&tournament=US+Open" target="_blank">https://curtispokrant.com/public_data/tennis_data?year=2023+Men%27s&tournament=US+Open</a>.
 
-Read a related blog post about the legend customization: <a href="https://009co.com/?p=2106" target="_blank">https://009co.com/?p=2106</a>
+Read a related blog post about the legend customization: <a href="https://curtispokrant.com/?p=2106" target="_blank">https://curtispokrant.com/?p=2106</a>
 
 ## Acknowledgments
 

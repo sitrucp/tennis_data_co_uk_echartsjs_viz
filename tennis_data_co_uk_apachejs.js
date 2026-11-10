@@ -99,7 +99,7 @@ const csvFiles = [
     const fileEntry = csvFiles.find((file) => file.year === year);
     const cacheBuster = new Date().getTime(); // Cache-busting technique
     const filePath = fileEntry
-      ? `/public_data/tennis_data/${fileEntry.file}?t=${cacheBuster}`
+      ? `${fileEntry.file}?t=${cacheBuster}`
       : "";
     return filePath; // Return the computed file path with cache-buster
   }
@@ -109,6 +109,7 @@ const csvFiles = [
       download: true,
       header: true,
       dynamicTyping: true,
+      skipEmptyLines: true,
       complete: (results) => {
         fullData = processCSVRows(results.data);
         processCSVData(fullData, year);
@@ -186,7 +187,7 @@ const csvFiles = [
     history.pushState(
       {},
       "",
-      "/public_data/tennis_data?" + queryParams.toString()
+      window.location.pathname + "?" + queryParams.toString()
     );
   }
   	  
@@ -484,5 +485,3 @@ const csvFiles = [
         cellBet365OddsLoser.textContent = item.B365L;
     });
   }
-
-  
